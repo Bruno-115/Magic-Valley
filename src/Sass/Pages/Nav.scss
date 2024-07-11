@@ -1,0 +1,160 @@
+@import './../Components/Variables.scss';
+.Nav{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   background-color: $Background-Color-Nav;
+   width: 100vw;
+}
+
+.Nav{
+  &__Header{
+    &__Presentation{
+        display: flex;
+        flex-direction: row;   
+        text-decoration: none;
+    }
+    &__Logo{
+    height:6rem;
+    width: 6rem;
+    @media screen and (max-width:$mb-400) {   
+        height: 4rem;
+        width: 4rem;
+        margin-top: 1rem;
+    }
+    }
+    &__Container,
+    &__Container:visited,
+    &__Container:link{
+        text-decoration: none;
+        color: $Panel-BackgroundText;
+        display: flex;
+        flex-direction: row;
+    }
+    &__Title{
+        font-size: 2rem;
+        text-transform: uppercase;
+        position: relative;
+        top: 35%;
+        color: #000;
+        @media screen and (max-width:$mb-600) {
+            top: 40%;
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width:$mb-600) {
+            top: 45%;
+            font-size: 1rem;
+        }
+    }
+    &__Search{
+        background-color: $Search-Bar;
+        height: 4rem;
+        width:40rem;
+        border: none;
+        outline: none;
+        font-size: 2rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        text-align: center;
+        @media screen and (max-width:$mb-800) {
+            width: 30rem;
+        }
+        @media screen and (max-width:$mb-600) {
+            margin-left: -5rem;
+        }
+        @media screen and (max-width:$mb-500) {
+            width: 20rem;
+        }
+        @media screen and (max-width:$mb-400) {
+            width: 15rem;
+        }
+        &-Icon{
+            height: 2rem;
+            position: relative;
+            left: -8%;
+            top: 5%;
+            z-index: 10;
+            cursor: pointer;
+            @media screen and (max-width:$mb-600) {
+                left: -3%;
+            }
+        }
+        &-Btn{
+            cursor: pointer;
+            height: 3.8rem;
+            width: 5rem;
+            position: relative;
+            left: -15.1%;
+            top: 21%;
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            border: 2px solid $Search-Btn-Border;
+            margin: 0;
+            padding: 0;
+            @media screen and (max-width:$mb-400) {   
+                left: -25%;
+            }
+        }
+    }
+
+    &__Icon{
+        height: 4rem;
+        margin-top: 1rem;
+        @media screen and (max-width:$mb-900) {
+           height: 3rem;
+           margin-top: 2rem;
+        }
+    }
+   &__DisplayState{
+    margin-left: -8rem;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+   }
+    &__Btn:active,
+    &__Btn:link,
+    &__Btn:visited{
+        margin-top: 3rem;
+        font-size: 1rem;
+        height: 2rem;
+        text-transform: uppercase;
+        cursor:pointer;
+        color: #000;
+        text-decoration: none;
+        transition: all .4s;
+    }
+    &__Btn:last-child{
+        margin-right: 3.5rem;
+    }
+    &__Btn:hover{
+        scale: 1.1;
+    }
+    &__Name{
+        margin-top: 2rem;
+        margin-right: 5rem;
+        text-decoration: none;
+        font-size: 2rem;
+        text-transform:capitalize;
+        @media screen and (max-width:$mb-900) {
+            margin-right: 3rem;
+        }
+    }
+    &__Cart{
+        &-Img{
+            position: absolute;
+            right:.5%;
+            top: 1%;
+            height: 4rem;
+            padding: .5rem;
+            transition: all .4s;
+            z-index: 10;
+            @media screen and (max-width:$mb-400) {   
+                height: 3rem;
+            }
+        }
+        &-Img:hover{
+            scale: 1.1;
+        }
+    }
+}
+}

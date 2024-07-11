@@ -1,0 +1,68 @@
+//Resoluções
+$mb-1250 : 1250px;
+$mb-1100 : 1100px;
+$mb-1000 : 1000px;
+$mb-900 : 900px;
+$mb-800 : 800px;
+$mb-700 : 700px;
+$mb-600 : 600px;
+$mb-500 : 500px;
+$mb-400 : 400px;
+
+
+
+$Brightness: linear-gradient(to right,rgba(0,0,0,.3),rgba(0,0,0,.3));
+$Brightness-1: linear-gradient(to right,rgba(0,0,0,.1),rgba(0,0,0,.1));
+//NAV BAR
+$Background-Color-Nav:rgb(34, 139, 34);
+$Search-Bar:#E5E4E2;
+$Search-Btn-Border:	#023020;
+$Panel-BackgroundText: #fff;
+$Panel-Border: #000;
+$Panel-Highlight: #fb2056;
+$Panel-BackgroundImg2:#b6f492;
+$Background-Text3: linear-gradient(to bottom, #b6f492, #338b93);
+$Background-Text4: radial-gradient(circle at 10% 20%, #feffa5 0%, #ffe8b6 90%);
+$Background-Text5: linear-gradient(109.6deg, #ffdb2f 11.2%, #f4fd00 100.2%);
+$Background-Text6: linear-gradient(to right, #27a770 0%, #efefef 74%);
+$Background-Btn: #fff;
+$Border-Btn: #50C878;
+
+//Produtos 
+$Border-Color:#5b342e;
+$Border-Color1:#6c453f;
+$Border-Color2: #000;
+$BuyBtn-Color: #78675d;
+$TextBuy-Color: #ddd;
+
+
+//Cart
+$nail: radial-gradient(closest-side,#D7D7D7,#464646,#353535,); 
+$background-product: rgba(255, 255, 255,0.85);
+$borders-colors: #000;
+
+//Register
+$light-Wood: #A47449;
+$dark-Wood: #704F32;
+$background-Register:#F5F5DC;
+$error-Register:#DE3163;
+$accept-Register:#088F8F;
+
+//LoginPag
+
+$background-loginColor:linear-gradient(to top left, rgb(25, 22, 84),rgb(67, 198, 172));
+$background-loginBtn:#4b6cb7;
+$login-TextColor:#fff;
+$login-BorderColor:#43cea2;
+$login-ErrorMsg:#DC2424;
+
+//LoginHistoric
+
+$Historic-border:#45a247;
+$Historic-background:#E2E2E2;
+$Historic-Promotionbackground:#93F9B9;
+
+//LoginSell
+
+$Sell-Background:rgba(255, 255, 255,0.5);
+$Sell-Border: #38ef7d;

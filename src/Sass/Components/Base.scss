@@ -1,0 +1,40 @@
+@import './Variables.scss';
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: 'Tenor Sans', sans-serif;
+  @media screen and (max-width:$mb-1250) {
+    font-size: 80%;
+  }
+  @media screen and (max-width:$mb-1100) {
+    font-size: 75%;
+  }
+  @media screen and (max-width:$mb-1000) {
+    font-size: 70%;
+  }
+  @media screen and (max-width:$mb-900) {
+    font-size: 65%;
+  }
+  @media screen and (max-width:$mb-800) {
+    font-size: 60%;
+  }
+  @media screen and (max-width:$mb-700) {
+    font-size: 55%;
+  }
+  @media screen and (max-width:$mb-600) {
+    font-size: 50%;
+  }
+  @media screen and (max-width:$mb-500) {
+    font-size: 45%;
+  }
+  @media screen and (max-width:$mb-400) {
+    font-size: 40%;
+  }
+}

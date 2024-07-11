@@ -1,0 +1,256 @@
+@import './../Components/Variables.scss';
+.Cart{
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(12,1fr);
+    z-index: -100;
+    &__Background{
+        position: absolute;
+        height: 90vh;
+        width: 100%;
+        background-image: url('./../img/cartBackground.jpg');
+        background-size: 100rem 50rem;
+        background-repeat: no-repeat;
+        filter: blur(.2rem);
+        @media screen and (max-width:$mb-1100) {
+            background-size: 100rem 55rem;
+        }
+        @media screen and (max-width:$mb-900) {
+            background-size: 100rem 60rem;
+        }
+        @media screen and (max-width:$mb-900) {
+            background-size: 100vw 100vh;
+        }
+        @media screen and (max-width:$mb-600) {
+            background-size: cover;
+            height: 100vh;
+        }
+    }
+    &__List{
+        margin-top: 2rem;
+        grid-row: 1 / 12;
+        grid-column: 2 / 6;
+        background-image: linear-gradient(to top,rgba(0, 0, 0,0.25),rgba(255, 255, 255,0.25)),url(./../img/woodTexture.jpg);
+        background-size: cover;
+        background-position: center;
+        border: 3px solid $borders-colors;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+        margin-bottom: 5.3rem;
+        overflow: hidden;
+        z-index: 5;
+        @media screen and (max-width:$mb-600) {
+           grid-column: 2 / 8;
+           grid-row: 1 / 9;
+        }
+    }
+    &__Product{
+        height: 8rem;
+        display: flex;
+        justify-content: space-around;
+        background-color: $background-product;
+        border: 2px solid $borders-colors;
+        margin: .3rem 2rem;
+        &-Decoration1{
+            position: absolute;
+            margin-top: 0.2rem;
+            left: 15%;
+            height: 2rem;
+            width: 2rem;
+            background-image: $nail;
+            border-radius:100%;
+            @media screen and (max-width:$mb-600) {
+                left: 17%;
+             }
+        }
+        &-Decoration2{
+            position: absolute;
+            margin-top: 0.2rem;
+            left: 57%;
+            height: 2rem;
+            width: 2rem;
+            background-image: $nail;         
+            border-radius:100%;
+            @media screen and (max-width:$mb-600) {
+                left: 80%;
+             }
+        }
+        &-Img{
+            position: relative;
+            top: 5%;
+            left: 1%;
+            height: 6rem;
+            width: 6rem;
+            border-radius: 40%;
+            border: 2px solid $borders-colors;
+        }
+        &-Name{
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin-top: 3rem;
+        }
+        &-Price{
+            margin-top: 3rem;
+            font-size: 2rem;
+            font-weight: lighter;
+        }
+        &-Left{
+            position: relative;
+            right: 95%;
+            margin-top: 4rem;
+            font-size: 1rem;
+            text-wrap: nowrap;
+        }
+        &-Quantity{
+            display: flex;
+            height: 4rem;
+            width: 7.5rem;
+            flex-direction:row;
+            margin-top: 2rem;
+            margin-right: -3rem;
+        }
+        &-Number{
+            font-size: 3rem;
+            margin-top: -.8rem;
+            padding: 1rem;
+            height: 2rem;
+        }
+        &-Btn{
+            border-radius: 50%;
+            margin-top: 1rem;
+            height: 2rem;
+            border: 2px solid $borders-colors;
+        }
+        &-Arrow{
+            height: 2rem;
+        }
+        &-Remove{
+            position: relative;
+            top:65%;
+            left: 1%;
+            height: 2.5rem;
+        }
+        &-Numbers{
+            position: absolute;
+            top: 60%;
+            width: 50%;
+            text-align: center;
+        }
+        &-ListNumber{
+          border-radius: 50%;
+          margin-left: 1rem;
+          height: 2rem;
+          width: 2rem;
+        
+        }
+    }
+    &__Panel{
+        background-image: url(./../img/woodSing.png);
+        background-position: -5rem -3rem;
+        background-size: 48rem;
+        background-repeat: no-repeat;
+        position: relative;
+        grid-row: 2 / 11;
+        grid-column: 6 / -1;
+        @media screen and (max-width:$mb-1000) {
+           background-size: 60rem;
+           background-position: -8rem -4rem;
+        }
+        @media screen and (max-width:$mb-900) {
+            background-size: 62rem;
+        }
+        @media screen and (max-width:$mb-600) {
+           grid-column: 4/ 9;
+           grid-row: 8 / -1;
+        }
+        
+        &-DisplayValue{
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 2px solid $borders-colors;
+        }
+        &-Title{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            @media screen and (max-width:$mb-900) {
+                top: 50%;
+             }
+            @media screen and (max-width:$mb-600) {
+                left: 35%;
+             }
+             @media screen and (max-width:$mb-400) {   
+                top: 35%;
+            }
+        }
+        &-TextDisplay{
+            position: absolute;
+            top: 45%;
+            left: 35%;
+            @media screen and (max-width:$mb-800) {
+                top: 40%;
+                left: 25%;
+            }
+            @media screen and (max-width:$mb-600) {
+                top: 65%;
+                left: 35%;
+            }
+            @media screen and (max-width:$mb-400) {   
+                top: 50%;
+            }
+        }
+        &-Text{
+            text-align: center;
+            padding: .5rem;
+            @media screen and (max-width:$mb-800) {
+                font-size: 1.5rem;
+            }
+        }
+        &-DisplayValue{
+            position: absolute;
+            top: 55%;
+            left: 30%;
+            @media screen and (max-width:$mb-800) {
+                top: 50%;
+            }
+            @media screen and (max-width:$mb-600) {
+                top: 80%;
+                left: 35%;
+            }
+            @media screen and (max-width:$mb-400) {   
+                top: 60%;
+            }
+        }
+        &-Value{
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+        &-Btn{
+            position: absolute;
+            top: 66%;
+            left: 20%;
+            font-size: 2rem;
+            padding: .5rem;
+            margin-left: 7rem;
+            margin-top: .2rem;
+            border: 2px solid $borders-colors;
+            background-color: rgba($color: #ffffff, $alpha: 0.8);
+            @media screen and (max-width:$mb-800) {
+                top: 58%;
+            }
+            @media screen and (max-width:$mb-600) {
+                left: 25%;
+                top: 95%;
+            }
+            @media screen and (max-width:$mb-400) {   
+                top: 70%;
+            }
+        }   
+    }
+}

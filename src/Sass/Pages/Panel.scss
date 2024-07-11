@@ -1,0 +1,373 @@
+@import './../Components/Variables.scss';
+.Panel{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(8 , 1fr );
+    grid-template-rows: repeat(10 , 8vh );
+    @media screen and (max-width:$mb-600) {
+        grid-template-rows: repeat(9 , 6vh );
+    }
+    @media screen and (max-width:$mb-500) {
+        grid-template-rows: repeat(9 , 5vh );
+    }
+    &__Display{
+        grid-column: 2 / 8;
+        grid-row: 1 / 9;
+        display: none;
+        @media screen and (max-width:$mb-600) {   
+            grid-row: 1 / 9;
+        }
+        &-Active{
+            overflow: hidden;   
+            border: 2px solid $Panel-Border;  
+        }
+        &-1{
+            position: relative;
+            top: -88%;
+            left: -20%;
+            height: 100vh;
+            width: 100vw;
+            background-image: url(./../img/BackgroundPanel1.jpg);
+            background-repeat: no-repeat;
+            background-size:100vw 100vh;
+            background-position: center;
+            z-index: -10;
+            filter: brightness(50%);
+            @media screen and (max-width:$mb-700) {
+                top: -90%;
+            }
+            @media screen and (max-width:$mb-600) {
+                top: -150%;
+            }
+        }
+        &-2{
+            background-image: $Brightness,url(./../img/Img-2.jpg);
+            position: relative;
+            top: -110%;
+            height: 100vh;
+            width: 100vw;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:100vw 100vh;
+            filter: blur(4px);
+            z-index: -10;
+        }
+        &-3{
+            position: relative;
+            top: -70%;
+            left: -30%;
+            background-image: $Brightness-1,url(./../img/Fruits.jpg);
+            background-size:100vw 100vh;
+            @media screen and (max-width:$mb-1250) {
+                top: -50%;
+            }
+            @media screen and (max-width:$mb-900) {   
+                top: -40%;
+            }
+            @media screen and (max-width:$mb-600) {   
+                top: -60%;
+            }
+            @media screen and (max-width:$mb-500) {   
+                top: -100%;
+            }
+            
+        }
+        &-4{
+            position: relative;
+            top: -100%;
+            left: -30%;
+            background-image: $Brightness,url(./../img/Handmade.jpg);
+            background-size:100vw 100vh;
+            @media screen and (max-width:$mb-1000) {
+                top: -87%;
+            }
+            @media screen and (max-width:$mb-1000) {
+                top: -90%;
+            }
+            @media screen and (max-width:$mb-800) {
+                top: -87%;
+            }
+            @media screen and (max-width:$mb-700) {
+                top: -93%;
+            }
+            @media screen and (max-width:$mb-600) {   
+                top: -120%;
+            }
+            @media screen and (max-width:$mb-500) {   
+                top: -150%;
+            }
+        }
+        &-5{
+            position: relative;
+            top: -100%;
+            left: -30%;    
+            background-image: $Brightness-1,url(./../img/Cereals.jpg);     
+            @media screen and (max-width:$mb-1000) {
+                top: -90%;
+            }
+            @media screen and (max-width:$mb-900) {
+                top: -82%;
+            }
+            @media screen and (max-width:$mb-700) {
+                top: -87%;
+            }
+            @media screen and (max-width:$mb-600) {   
+                top: -120%;
+            }
+            @media screen and (max-width:$mb-500) {   
+                top: -150%;
+            }
+            @media screen and (max-width:$mb-400) {   
+                top: -135%;
+            }
+        }
+        &-6{
+            position: relative;
+            top: -70%;
+            left: -30%;    
+            background-image: $Brightness,url(./../img/Vegetable.jpg);     
+            background-size:100vw 100vh;
+            @media screen and (max-width:$mb-1000) {
+                top: -60%;
+            }
+            @media screen and (max-width:$mb-900) {
+               top: -58%;
+            }
+            @media screen and (max-width:$mb-600) {
+                top: -70%;
+             }
+            @media screen and (max-width:$mb-500) {
+                top: -120%;
+             }
+             @media screen and (max-width:$mb-400) {   
+                top: -110%;
+            }
+        }
+        &-Active{
+            display: block;
+        }
+        &-Config{
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            background-size:100vw 40rem;
+            z-index: -10;
+        }
+    }
+
+    &__Img{
+        &-1{
+            margin-top: 5rem;
+            margin-left: 5rem;
+            height: 20rem;
+        }
+        &-2{
+            margin-top: 2rem;
+            margin-left: 27rem;
+            height: 20rem;
+            background-color: $Panel-BackgroundImg2;
+            border-radius: 50%;
+            @media screen and (max-width:$mb-700) {
+                margin-left: 20rem;
+                margin-top: 5rem;
+            }
+            @media screen and (max-width:$mb-500) {
+                position: relative;
+                left: 0%;
+                transform: translate(-15%);
+            }
+        }
+    }
+    &__Text{
+        &-1{
+            margin-top: -20rem;
+            font-size: 1.5rem;
+            letter-spacing: .2rem;
+            background-color:$Panel-BackgroundText;
+            margin-left: 30rem;
+            border-bottom-left-radius: 2rem;
+            border-top-left-radius: 2rem;
+            padding-left: 1rem;
+            @media screen and (max-width:$mb-600) {
+                font-size: 1.2rem;
+            }
+        }
+        &-2{
+            background-color: $Panel-BackgroundText;
+            border-bottom-left-radius:20%;
+            border-bottom-right-radius:20%;
+            text-align: center;
+            font-size: 2rem;
+            letter-spacing: .2rem;
+            text-transform: uppercase;
+            @media screen and (max-width:$mb-500) {
+                font-size: 2.5rem;
+            }
+        }
+        &-3{
+            text-align: center;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            padding-top: 5rem;
+            margin-top: -5.4rem;
+            border-top-left-radius: 100%;
+            border-top-right-radius: 100%;
+            @media screen and (max-width:$mb-500) {
+                font-size: 2.5rem;
+                text-wrap: nowrap;
+            }
+            &-1{
+                margin-top: -2rem;
+                background: $Background-Text3;
+                background-color: blue;
+                padding-top: 5rem;
+                padding-bottom: 1rem;
+                text-align: center;
+                font-size: 2rem;
+                text-transform: uppercase;
+                letter-spacing: .2rem;
+                border-bottom-left-radius: 50%;
+                border-bottom-right-radius: 40%;
+                @media screen and (max-width:$mb-700) {
+                    border-radius: 0;
+                }
+                @media screen and (max-width:$mb-500) {
+                    margin-top: 0;
+                    padding-top: 10rem;
+                    margin-top: -5rem;
+                }
+            }
+        }
+        &-4{
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+            background: $Background-Text4;
+            margin-top: -1rem;
+            padding-top: 2rem;
+            z-index: 10;
+            @media screen and (max-width:$mb-1000) {
+               padding-bottom: 3rem;
+            }
+            @media screen and (max-width:$mb-600) {   
+                font-size: 3rem;  
+            }
+            &-1{
+                padding-top: 6rem;
+                padding-bottom: 6rem;
+                margin-top: 6.06rem;
+                background: $Background-Text4;
+                font-size: 2rem;
+                text-align: center;
+                position: relative;
+                margin-left: 35rem;
+                top: -20%;
+                border-bottom-left-radius: 70%;
+                z-index: -5;
+                @media screen and (max-width:$mb-500) {   
+                    margin-left: 25rem; 
+                }
+            }
+        }
+        &-5{
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+            margin-top: -2rem;
+            padding-top: 2rem;
+            background: $Background-Text5;
+            @media screen and (max-width:$mb-1000) {
+                padding-bottom: 3rem;
+             }
+             @media screen and (max-width:$mb-600) {   
+                font-size: 3rem;  
+                padding-bottom: 5rem;
+            }
+            &-1{
+                background:$Background-Text5;
+                padding: 6rem 4rem 10rem 0;
+                margin-right: 35rem;
+                text-align: center;
+                font-size: 2rem;
+                border-bottom-right-radius: 100%;
+                z-index: -5;
+                @media screen and (max-width:$mb-500) {
+                   margin-right: 25rem;
+                }
+            }
+        }
+        &-6{
+            font-size: 2rem;
+            text-align: center;
+            background:$Background-Text6;
+            @media screen and (max-width:$mb-900) {
+                padding-bottom: 3rem;
+             }
+                &-1{
+                padding-top: 5rem;
+                padding-bottom: 3rem;
+                background:$Background-Text6;
+                text-align: center;
+                font-size: 2rem;
+                border-bottom-left-radius: 100%;
+                border-bottom-right-radius: 100%;
+                z-index: -5;
+        }
+        }
+        &-Highlight{
+            font-size: 2.4rem;
+            text-decoration:underline;
+            color:$Panel-Highlight;
+        }
+    }
+    &__Arrow{
+        border-radius: 50%;
+        &-right{
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            @media screen and (max-width:$mb-900) {
+                top: 35%;
+             }
+        }  
+        &-left{
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            @media screen and (max-width:$mb-900) {
+                top: 35%;
+             }
+        }
+    }
+    &__BtnDiv{
+        position: absolute;
+        top: 77%;
+        left: 50%;
+        transform: translateX(-40%);     
+        @media screen and (max-width:$mb-1250) {
+            top: 75%;
+        } 
+        @media screen and (max-width:$mb-600) {   
+            top: 55%;
+        }
+        @media screen and (max-width:$mb-500) {   
+            top: 46%;
+        }
+    }
+    &__Btn{
+        background:$Background-Btn;
+        border: none;
+        padding: .7rem;
+        margin: 1rem;
+        border-radius: 2rem;
+        border: .3rem solid $Border-Btn;
+    }
+}
+
+.Arrow{
+    height: 5rem;
+}

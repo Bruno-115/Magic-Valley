@@ -1,0 +1,273 @@
+@import '../Components/Variables.scss';
+
+.Login{
+    &__Panel{
+        height: 85vh;
+        width: 100vw;
+        position: relative;
+    }
+    &__Menu{
+        background-image: url('./../img/loginMenu.jpg');
+        height: 100vh;
+        width: 30vw;
+        top: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: fixed;
+        z-index: -100;
+    }
+    &__Background{
+        background-image: url('./../img/loginPag.jpg');
+        background-size: 100vw 65vh;
+        height: 100%;
+        width: 100%;
+        z-index: -10;
+        background-repeat: none;
+    }
+    &__Inputs{
+        position: absolute;
+        background-image: $background-loginColor;
+        padding: 3rem 38.1vw 2rem ;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top:55%;
+    }
+    &__Input{
+        font-size: 1rem;
+        margin: 1rem;
+        border: 2px solid $login-BorderColor;
+        padding: 1rem;
+        outline: none;
+        width: 18rem;
+    }
+    &__Label{
+        text-align: center;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .3rem;
+        color: $login-TextColor;
+    }
+    &__Error{
+       text-align: center;
+       font-size: 1.5rem;
+       text-wrap: nowrap;
+       color:$login-ErrorMsg;
+    }
+    &__Btn{
+        position: absolute;
+        margin-top: 5rem;
+        left: 70%;
+        padding: 1rem 4rem;
+        font-size: 2rem;
+        background-color: $background-loginBtn;
+        letter-spacing: .2rem;
+        border: 2px solid $login-BorderColor;
+        text-transform: uppercase;
+        color: $login-TextColor;
+    }
+    &__Btns{
+        text-decoration: none;
+        font-size: 2rem;
+        padding: 1rem;
+        text-transform: uppercase;
+        background-color: white;
+        color: #000;
+        letter-spacing: .2rem;
+    }
+}
+
+.Historic{
+    &__Title{
+        text-align: center;
+        margin-top: 2rem;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        padding-top: 1rem;
+        margin-bottom: -.5rem;
+    }
+    &__Background{
+        position: absolute;
+        background-image: url('./../img/loginOptionBg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        z-index: -5;
+        filter: blur(6px);
+        @media screen and (max-width:$mb-600) {
+            top: -5%
+        }
+    }
+    &__Navigation{
+        display: flex;
+        flex-direction: row;
+    }
+    &__Product{
+     
+        &-Info{
+            display: flex;
+            justify-content: space-around; 
+            flex-direction: row; 
+            border: 3px solid $Historic-border;
+            margin-top: 2rem;
+            background-color: $Historic-background;
+        }
+        &-Photo{
+            height: 6rem;
+            width: 8rem;
+            padding: .2rem;
+        }
+        &-Title{
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            margin-top: 1.3rem;
+        }
+        &-Value{
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+        &-Quantity{
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+        &-Btn{
+            font-size: 3rem;
+            padding: 1rem 2rem;
+            border-radius: 100%;
+            margin-right: -1.5rem;
+        }
+        &-Promotion{
+            text-align: center;
+            margin-bottom: -2rem;
+            background-color: $Historic-Promotionbackground;
+            border: 3px solid $Historic-border;
+        }
+        &-Label{
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            font-weight: bold;
+        }
+        &-Input{    
+            font-size: 1.5rem;
+            width: 4rem;
+            border: 2px solid $Historic-border;
+        }
+        &-SendBtn{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin-left: 2rem;
+            padding: .5rem 2rem;
+            letter-spacing: .2rem;
+            background-color: $Historic-background;
+        }
+    }
+}
+
+.Sell{
+    background-image: url('./../img/paper.png');
+    height: 40rem;
+    width: 35rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 25%;
+    top: 8%;
+    @media screen and (max-width:$mb-600) {
+        top: 10%;
+        background-size: cover;
+        width: 45rem;
+        height: 50rem;
+        left: 10%;
+    }
+    &__Background{
+        position: absolute;
+        background-image: url('./../img/loginOptionBg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        z-index: -5;
+        filter: blur(6px);
+        @media screen and (max-width:$mb-600) {
+            top: -5%;
+        }
+    }
+    &__Photo{
+        font-size: 2rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        @media screen and (max-width:$mb-600) {
+            font-size: 5rem;
+            padding: 2rem;
+        }
+    }
+    &__PhotoBtn{
+        margin: 1.5rem 12rem 0;
+        font-size: 1.5rem;
+        border: 3px solid $Sell-Border;
+        text-transform: uppercase;
+        padding: 0.5rem;
+        background-color: $Sell-Background;
+        @media screen and (max-width:$mb-600) {
+            padding: 1rem 2rem;
+            width: 20rem;
+        }
+    }
+    &__Name{
+        margin: 2rem 0;
+        margin-left: 8rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        height: 2.5rem;
+        outline: none;
+        border:none;
+        border-bottom: 3px solid $Sell-Border;
+        background-color: r$Sell-Background;
+        @media screen and (max-width:$mb-600) {
+            width: 35rem;
+        }
+    }
+    &__Option{
+        font-size: 2rem;
+        width: 10rem;
+        text-align: center;
+        margin-left: 12rem;
+        @media screen and (max-width:$mb-600) {
+           width: 30rem;
+        }
+    }
+    &__Submit{
+        font-size: 2rem;
+        position: relative;
+        left: -32%;
+        top: 10%;
+        background-color: $Sell-Background;
+        border: none;
+        padding: 0.5rem;
+    }
+    &__Error{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    &__InputPhoto{
+        font-size: 1rem;
+        margin-left: 12rem;
+    }
+}
+
+.DispalyContent{
+    position: absolute;
+    height: 100vh;
+    width: 80vw;
+    top: 8%;
+    left: 20vw;
+}

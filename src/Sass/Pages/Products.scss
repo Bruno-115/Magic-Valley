@@ -1,0 +1,89 @@
+@import './../Components/Variables.scss';
+.Product{
+    &__Title{
+        font-size: 1.5rem;
+        margin-left: 4rem;
+        text-transform: uppercase;
+        border-bottom: 6px solid $Border-Color2;
+    }
+    &__List{
+        height: 23rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 5rem;
+    }
+
+    &__Card{
+        background-image:url('./../img/Product-Background.png');
+        background-position: -13.8rem -1rem;
+        background-size: 40rem;
+        height: 24rem;
+        width: 12.9rem;
+        border-radius: .5rem;
+        position: relative;
+        overflow: hidden;
+        &-Img{
+            border: 2px solid $Border-Color;
+            position: relative;
+            top: 25%;
+            left: 15%;
+            height: 9rem;
+            width: 9rem;
+            border-top-right-radius: 25%;   
+        }
+        &-Title{
+            position: relative;
+            top: 25%;
+            margin: 0 4rem;
+            font-size: 1.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            text-wrap: nowrap;
+        }
+        &-Price{
+            position: relative;
+            top: 30%;
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: -1rem;
+        }
+        &-Promo{
+            position: absolute;
+            top: 17%;
+            left: 57%;
+            font-size: 2rem;
+            padding: 0rem 2rem;
+            font-weight: bolder;
+            background-color: red;
+            transform: rotate(44deg);
+        }
+        &-Btn{
+            position: relative;
+            top: 32%;
+            left: -8%;
+            font-size: 1.2rem;
+            margin-left: 4.5rem;
+            margin-top: -0.2rem;
+            padding: .5rem;
+            background-color: $BuyBtn-Color;
+            color: $TextBuy-Color;
+            border-radius: 25%;
+            border: 3px solid $Border-Color1;
+            
+        }
+    }
+}
+
+
+.Arrow{
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    top: 50%;
+}
+
+.Arrow-Img{
+    height: 3rem;
+}

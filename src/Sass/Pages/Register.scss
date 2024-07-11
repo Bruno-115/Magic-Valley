@@ -1,0 +1,102 @@
+@import './../Components/Variables.scss';
+.Register{
+    &__Form{
+        background-image: url(../img/test2.jpg);
+        filter: contrast(85%);
+        height: 87vh;
+        background-position: center;
+        background-size: 100rem 50rem;
+        position: relative;
+    }
+
+    &__Inputs{
+        position: absolute;
+        top: 38%;
+        left: 28%;
+        width: 40rem;
+        height: 23rem;
+        border: 12px solid $light-Wood;
+        border-left: 36px solid $dark-Wood;
+        border-right: 36px solid $dark-Wood;
+        text-align:center;
+        background-color: #F5F5DC
+    }
+    &__Label{
+        font-size: 1.5rem;
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: .2rem;
+        letter-spacing: .1rem;
+    }
+    &__Error{
+        font-size:1rem;
+        text-align: center;
+        color: $error-Register;
+        display: none;
+    }
+    &__Input{
+        display: table-column;
+        font-size: 1.3rem;
+        border: solid 2px $light-Wood;
+        outline: none;
+    }
+    &__BtnBack{
+        position: absolute;
+        font-size: 2rem;
+        top: 84.8%;
+        left: 30.4%;
+        padding: 1rem;
+        border: none;
+        border-right: 2px solid $dark-Wood;
+        border-top: 2px solid $dark-Wood;
+    }
+    &__BtnNext{
+        position: absolute;
+        font-size: 2rem;
+        top: 84.8%;
+        left: 63.1%;
+        padding: 1rem;
+        border: none;
+        border-left: 2px solid $dark-Wood;
+        border-top: 2px solid $dark-Wood;
+        transition: all .4s;
+        width: 7.4rem;
+    }
+    &__Save-Green:hover{
+        background-color: $accept-Register;
+    }
+    &__Save-Red:hover{
+        background-color: $error-Register;
+    }
+    &__BtnNext:hover{
+        filter: brightness(80%);
+    }
+    &__BtnBack:hover{
+        filter: brightness(80%);
+    }
+    &__Input:invalid ~ &__Error{
+        display: block;
+    }
+    &__Decoration1{
+        position: absolute;
+        margin-top: 0.2rem;
+        top: 0%;
+        left: 1%;
+        height: 2rem;
+        width: 2rem;
+        background-image: $nail;         
+        border-radius:100%;
+    }
+    &__Decoration2{
+        position: absolute;
+        margin-top: 0.2rem;
+        top: 0%;
+        left: 94%;
+        height: 2rem;
+        width: 2rem;
+        background-image: $nail;         
+        border-radius:100%;
+    }
+}
