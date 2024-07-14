@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Magic-Valley/static/css/main.4e7e9ac2.css",
-    "main.js": "/Magic-Valley/static/js/main.0a3f66c5.js",
+    "main.js": "/Magic-Valley/static/js/main.2a4e3fa0.js",
     "static/media/img-2-1.png": "/Magic-Valley/static/media/img-2-1.231803da3c1f6b02997a.png",
     "static/media/paper.png": "/Magic-Valley/static/media/paper.38fa6990769f21585455.png",
     "static/media/Icon.png": "/Magic-Valley/static/media/Icon.7b8e8754cf7eb67c9643.png",
@@ -27,10 +27,10 @@
     "static/media/arrow-sm-right-svgrepo-com.svg": "/Magic-Valley/static/media/arrow-sm-right-svgrepo-com.84b3b8a8e776e93d396d9b0df0a13829.svg",
     "static/media/arrow-sm-left-svgrepo-com.svg": "/Magic-Valley/static/media/arrow-sm-left-svgrepo-com.ec25225403bfaadb78208ad63f85fd35.svg",
     "main.4e7e9ac2.css.map": "/Magic-Valley/static/css/main.4e7e9ac2.css.map",
-    "main.0a3f66c5.js.map": "/Magic-Valley/static/js/main.0a3f66c5.js.map"
+    "main.2a4e3fa0.js.map": "/Magic-Valley/static/js/main.2a4e3fa0.js.map"
   },
   "entrypoints": [
     "static/css/main.4e7e9ac2.css",
-    "static/js/main.0a3f66c5.js"
+    "static/js/main.2a4e3fa0.js"
   ]
 }
