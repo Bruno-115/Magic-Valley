@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Magic-Valley/static/css/main.4e7e9ac2.css",
+    "main.js": "/Magic-Valley/static/js/main.d48ff0cd.js",
+    "static/media/img-2-1.png": "/Magic-Valley/static/media/img-2-1.231803da3c1f6b02997a.png",
+    "static/media/paper.png": "/Magic-Valley/static/media/paper.38fa6990769f21585455.png",
+    "static/media/Icon.png": "/Magic-Valley/static/media/Icon.7b8e8754cf7eb67c9643.png",
+    "static/media/Vegetable.jpg": "/Magic-Valley/static/media/Vegetable.9cd2f923353cebf3c7c5.jpg",
+    "static/media/BackgroundPanel1.jpg": "/Magic-Valley/static/media/BackgroundPanel1.b0532951797a2ba573d3.jpg",
+    "static/media/Cereals.jpg": "/Magic-Valley/static/media/Cereals.233044eae9782c6912b9.jpg",
+    "static/media/Img-2.jpg": "/Magic-Valley/static/media/Img-2.019a8edf3e0bca13146f.jpg",
+    "static/media/Handmade.jpg": "/Magic-Valley/static/media/Handmade.b317308cfa8682bd7492.jpg",
+    "static/media/Fruits.jpg": "/Magic-Valley/static/media/Fruits.bcb2ab55d54c99ff4b36.jpg",
+    "static/media/loginOptionBg.jpg": "/Magic-Valley/static/media/loginOptionBg.d9a81ce3bcb9031b3faa.jpg",
+    "static/media/woodSing.png": "/Magic-Valley/static/media/woodSing.6a165ff7e41a0d075e1a.png",
+    "static/media/cartBackground.jpg": "/Magic-Valley/static/media/cartBackground.e49c0c3a669d1cd22e0d.jpg",
+    "static/media/loginPag.jpg": "/Magic-Valley/static/media/loginPag.fa01e2c3e3bfdea7e7c2.jpg",
+    "static/media/woodTexture.jpg": "/Magic-Valley/static/media/woodTexture.9446526d1e969284a7c4.jpg",
+    "static/media/test2.jpg": "/Magic-Valley/static/media/test2.abd2ac5a624872d342a2.jpg",
+    "static/media/Product-Background.png": "/Magic-Valley/static/media/Product-Background.3ec798799174c3840fd9.png",
+    "static/media/loginMenu.jpg": "/Magic-Valley/static/media/loginMenu.f16f8bdd67e79b82a6c4.jpg",
+    "static/media/magnifying-glass-svgrepo-com.svg": "/Magic-Valley/static/media/magnifying-glass-svgrepo-com.81ab77a7468b9b5b22b2031f67791f73.svg",
+    "static/media/trash-bin-trash-svgrepo-com.svg": "/Magic-Valley/static/media/trash-bin-trash-svgrepo-com.f579ab4986c0be252d5a41b7bafd19b3.svg",
+    "static/media/person-svgrepo-com.svg": "/Magic-Valley/static/media/person-svgrepo-com.2aeaafcd55104f0ca303f21163e06962.svg",
+    "index.html": "/Magic-Valley/index.html",
+    "static/media/cart-shopping-svgrepo-com.svg": "/Magic-Valley/static/media/cart-shopping-svgrepo-com.da912b6216f277555ff94280c4844e49.svg",
+    "static/media/arrow-sm-right-svgrepo-com.svg": "/Magic-Valley/static/media/arrow-sm-right-svgrepo-com.84b3b8a8e776e93d396d9b0df0a13829.svg",
+    "static/media/arrow-sm-left-svgrepo-com.svg": "/Magic-Valley/static/media/arrow-sm-left-svgrepo-com.ec25225403bfaadb78208ad63f85fd35.svg",
+    "main.4e7e9ac2.css.map": "/Magic-Valley/static/css/main.4e7e9ac2.css.map",
+    "main.d48ff0cd.js.map": "/Magic-Valley/static/js/main.d48ff0cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e7e9ac2.css",
+    "static/js/main.d48ff0cd.js"
+  ]
+}
